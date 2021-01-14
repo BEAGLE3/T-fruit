@@ -5,7 +5,7 @@ class Game{
     getState() {
         var gameStateRef = database.ref('gameState');
         gameStateRef.on("value", function (data) {
-            gameState = data.val();
+             gameState = data.val();
         })
 
     }
