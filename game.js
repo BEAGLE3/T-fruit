@@ -5,7 +5,7 @@ class Game{
     getState() {
         var gameStateRef = database.ref('gameState');
         gameStateRef.on("value", function (data) {
-             gameState = data.val();
+            gameState = data.val();
         })
 
     }
@@ -66,9 +66,10 @@ class Game{
 
                          
                      }
-                    
-                   //  text("player1:"+player.score,50,50);
-                     //text("player2:"+player.score,50,100)
+                     textSize(25)
+                    fill("white")
+                    text("player1:"+allPlayers.player1.score,50,50);
+                     text("player2:"+allPlayers.player2.score,50,100)
                  
                  
                  }
